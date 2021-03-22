@@ -1,11 +1,13 @@
 console.log('ok js!')
 
-//esercizio uno!
+//ESERCIZIO UNO!
 
 //chiedi la mail dell'uttente
 //controlla che sia nella lista di chi può accedere
 //stampa un messaggio appropriato sull’esito del controllo.
 
+/***********************************************
+ 
 var list = ['mimmizoe@hotmail.it','didi_archer@hotmail.com','yuki2019@hotmail.com','nora2021@hotmail.com'];
 
 var userMail = prompt('What\'s your email?').toLowerCase();
@@ -29,19 +31,29 @@ if (userFind === true) {
 
 document.getElementById('user-mail').innerHTML = userFind;
 
+************************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-//esercizio due!
+//ESERCIZIO DUE!
 
 //Generare un numero random da 1 a 6, sia per il giocatore sia per il computer
 //Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+var person = Math.floor(Math.random() * 6 + 1);
+console.log(computer);
+
+var computer = Math.floor(Math.random() * 6 + 1);
+console.log(person)
+
+var result;
+
+if (computer < person) {
+    result = 'You won';
+} else if (person < computer) {
+    result = 'Computer won';
+} else {
+    result = 'draw';
+}
+
+document.getElementById('who-won').innerHTML = result;
+document.getElementById('person').innerHTML = person + ' is your number';
+document.getElementById('computer').innerHTML = computer + ' is the computer\'s number';
