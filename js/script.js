@@ -6,7 +6,7 @@ console.log('ok js!')
 //controlla che sia nella lista di chi può accedere
 //stampa un messaggio appropriato sull’esito del controllo.
 
-/***********************************************
+
  
 var list = ['mimmizoe@hotmail.it','didi_archer@hotmail.com','yuki2019@hotmail.com','nora2021@hotmail.com'];
 
@@ -24,14 +24,14 @@ for (var i = 0; i < list.length; i++) {
 }
 
 if (userFind === true) {
-    userFind = 'your on the list';
+    userFind = 'your on the team, enjoy!';
 } else {
-    userFind = 'your not on the list';
+    userFind = 'your not on the team, sorry :(';
 }
 
 document.getElementById('user-mail').innerHTML = userFind;
 
-************************************************/
+
 
 //ESERCIZIO DUE!
 
@@ -47,13 +47,13 @@ console.log(person)
 var result;
 
 if (computer < person) {
-    result = 'You won';
+    result = 'You won!';
 } else if (person < computer) {
-    result = 'Computer won';
+    result = 'Computer won!';
 } else {
     result = 'draw';
 }
 
 document.getElementById('who-won').innerHTML = result;
-document.getElementById('person').innerHTML = person + ' is your number';
-document.getElementById('computer').innerHTML = computer + ' is the computer\'s number';
+document.getElementById('person').innerHTML = person + ' your number';
+document.getElementById('computer').innerHTML = computer + ' computer\'s number';

@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* GENERALS */
+
+/* email side */
+.list-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    background: #28091c;
+}
+
+#user-mail {
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    color: #008233;
+    border: 3px solid #fff;   
+}
+
+
+/* game side */
+
+.Game-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+    background-image: url(../img/dice-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.result-box {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    background: #28091ce6;
+    border: 2px solid #fff;
+}
+
+.dices {
+    width: 60%;
+    text-align: center;
+    border-right: 2px solid #fff;
+}
+
+.results {
+    width: 40%;
+    text-align: center;
+}
